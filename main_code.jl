@@ -1,7 +1,7 @@
 # Load necessary packages
 using DataFrames, XLSX, StatsBase, Optim, Distributions, CSV
 
-# Load training and test datasets from Excel files (see README.md for sample test and training sets)
+# Load training and test datasets from Excel files (see sample_data.xlsx for sample test and training sets)
 df = DataFrame(XLSX.readtable("data/train.xlsx", "train"))  # Replace with correct filepath and sheet name
 df_test = DataFrame(XLSX.readtable("data/test.xlsx", "test"))  # Replace with correct filepath and sheet name
 
